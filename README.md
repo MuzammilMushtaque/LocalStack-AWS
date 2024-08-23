@@ -36,8 +36,8 @@ aws --endpoint-url=http://localhost:4566 s3api create-bucket --bucket my-bucket
 
 ### 5. Uplaod a File to S3
 ```bash
-echo "This is a test file." > test.txt
-aws --endpoint-url=http://localhost:4566 s3 cp test.txt s3://my-bucket/test.txt
+echo "This is a test file." > test.json
+aws --endpoint-url=http://localhost:4566 s3 cp test.json s3://my-bucket/test.json
 ```
 
 ### 6. List Files in the Bucket
@@ -51,13 +51,13 @@ aws --endpoint-url=http://localhost:4566 s3 ls s3://my-bucket/
 To download a file from S3:
 
 ```bash
-aws --endpoint-url=http://localhost:4566 s3 cp s3://my-bucket/test.txt test_downloaded.txt
+aws --endpoint-url=http://localhost:4566 s3 cp s3://my-bucket/test.json test_downloaded.json
 ```
 ### 8. Delete a File
 To delete a file from S3:
 
 ```bash
-aws --endpoint-url=http://localhost:4566 s3 rm s3://my-bucket/test.txt
+aws --endpoint-url=http://localhost:4566 s3 rm s3://my-bucket/test.json
 ```
 
 ## Simplified Architecture
