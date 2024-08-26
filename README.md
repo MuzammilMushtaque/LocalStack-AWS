@@ -28,6 +28,12 @@ aws configure
 ```
 Enter any dummy values for `AWS Access Key ID`, `AWS Secret Access Key`, and `Default region name`. Set the `Default output format` to json.
 
+### 3b. Set Environment Variable
+
+```bash
+export AWS_END_POINT_URL=sttp://localhost:4566
+```
+
 ### 4. Create an S3 Bucket using Localstack
 
 ```bash
